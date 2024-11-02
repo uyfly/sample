@@ -22,9 +22,9 @@ public class UserService {
             throw new IllegalArgumentException("Email is already in use.");
         }
 
-        if (!userDto.getPassword().equals(userDto.getConfirmPassword())) {
-            throw new IllegalArgumentException("Passwords do not match.");
-        }
+//        if (!userDto.getPassword().equals(userDto.getConfirmPassword())) {
+//            throw new IllegalArgumentException("Passwords do not match.");
+//        }
 
         User user = User.builder()
                 .email(userDto.getEmail())
